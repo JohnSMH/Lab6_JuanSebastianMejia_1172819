@@ -188,7 +188,7 @@ namespace Lab6JuanSebastianMejia1172819 {
 		
 		for each (int var in numeros)
 		{
-			int llave = var % 97;
+			int llave = var % 100;
 			if (Hash->ContainsKey(llave))
 			{
 				llave = llave + 10*var;
@@ -259,7 +259,7 @@ private: System::Void Button3_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void Button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	
 	int num = Convert::ToInt32(textBox2->Text);
-	int llave = num % 97;
+	int llave = num % 100;
 	Stopwatch^ st = gcnew Stopwatch();
 	st->Start();
 
